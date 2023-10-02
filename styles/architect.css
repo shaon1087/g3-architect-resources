@@ -5,6 +5,17 @@
 *{
     font-family: 'Work Sans', sans-serif;
 }
+.para-gray{
+    color:#727272;
+    font-size: 1em;
+    font-weight: 400;
+    
+}
+.h3-title{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 .primary-btn{
     padding: 20px 24px;
     border-radius: 8px;
@@ -73,14 +84,122 @@ nav li a{
     margin-top: 50px;
     width: 100%;
 }
+
+
+/* main part style */
+
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* feature part started */
+.feature{
+    display: flex;
+    align-items: center;
+}
+.feat-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.feat-text{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.feat-head{
+    font-size: 2.8em;
+}
+.span0{
+    color:#727272;
+    font-weight: 500;
+}
+
+.span1{
+    color: #131313;
+    font-weight: 500;
+
+}
+.span2{
+    color: #FF900E;
+    font-weight: 500
+
+}
+.feat-dis{
+    color:#727272;
+    font-size: 1em;
+    font-weight: 400;
+    
+}
+
+/* fact part start from here */
+/* .fact-dis{
+    max-width: 542px;
+} */
+.card-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content:space-around;
+}
+.card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    /* padding: 100px 90px 87px 90px; */
+    text-align: center;
+    padding: 25px;
+}
+.card-container .card-stats{
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-container .card-title{
+    color: #727272;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 5px;
+
+}
+/* sponsor part start from here */
+.sponsor{
+    margin-top: 200px;
+    text-align: center;
+}
+
+
+
 /* responsive media queries */
 /* for mobile devices */
 @media screen and (max-width:576px){
     header{
         padding: 20px;
     }
-    nav{
+    nav,
+    .feature,
+    .card-container
+    {
         flex-direction: column;
+    }
+    .feat-img{
+        grid-template-columns: 1fr;
+    }
+    main{
+       margin: 50px auto;
+    }
+    .feat-text,.card-container{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .card-container{
+        gap: 20px;
+    }
+    .feat-text{
+        text-align: center;
+    }
+    .facts-text{
+        text-align: center;
     }
 
 }
@@ -90,12 +209,29 @@ nav li a{
     header{
         padding: 40px;
     }
-    nav{
+    nav,
+    .feature,
+    .card-container
+    {
         flex-direction: column;
     }
-}
-    
-
+    /* .feat-img{
+        grid-template-columns: 1fr;
+    } */
+    main{
+       margin: 50px auto;
+    }
+    .feat-text{
+        text-align: center;
+    }
+    .card-container{
+        gap: 20px;
+        padding: 0 60px;
+    }
+    .facts-text{
+        text-align: center;
+    }
+}   
 
 
 
