@@ -131,11 +131,60 @@ main{
     font-weight: 400;
     
 }
+/* feature 2 part start from here */
+.feature2{
+    margin-top: 130px;
+    display: flex;
+    gap: 130px;
+    
+}
+.feature2-text .feat2-head{
+    padding-left: 20px;
+    border-left: 5px solid #FF900E;
+}
+.feature2 .card{
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature2 .card h2{
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;;
+}
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    width: 342px;
+    padding: 45px 40px;
+    position: relative;
+    bottom: 100px;
+
+}
+.ten-years-badge h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+
+}
+.feature2-img img{
+    height: 90%;
+    margin-left: 90px;
+}
+.ten-years-badge p{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+} 
 
 /* fact part start from here */
-/* .fact-dis{
-    max-width: 542px;
-} */
+
 .card-container{
     margin-top: 100px;
     display: flex;
@@ -196,7 +245,8 @@ main{
     }
     nav,
     .feature,
-    .card-container,.sponsor-images
+    .card-container,.sponsor-images,
+    .feature2
     {
         flex-direction: column;
     }
@@ -215,6 +265,19 @@ main{
     }
     .feat-text{
         text-align: center;
+    }
+    .feature2{
+        text-align: center;
+    }
+    .feature2-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ten-years-badge{
+        margin-top: 15px;
+        position: static;
+        width: 90%;
+        
     }
     .facts-text{
         text-align: center;
@@ -235,18 +298,29 @@ main{
     }
     nav,
     .feature,
-    .card-container,.sponsor-images
+    .card-container,.sponsor-images,
+    .feature2
     {
         flex-direction: column;
     }
-    /* .feat-img{
-        grid-template-columns: 1fr;
-    } */
     main{
        margin: 50px auto;
     }
     .feat-text{
         text-align: center;
+    }
+    .feature2{
+        text-align: center;
+    }
+    .feature2-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ten-years-badge{
+        margin-top: 15px;
+        position: static;
+        width: 90%;
+        
     }
     .card-container{
         gap: 20px;
