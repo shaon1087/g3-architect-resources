@@ -167,6 +167,16 @@ main{
     margin-top: 200px;
     text-align: center;
 }
+.sponsor-images{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+.sponsor-images img{
+    width: 165px;
+}
 
 
 
@@ -178,7 +188,7 @@ main{
     }
     nav,
     .feature,
-    .card-container
+    .card-container,.sponsor-images
     {
         flex-direction: column;
     }
@@ -201,6 +211,9 @@ main{
     .facts-text{
         text-align: center;
     }
+    .sponsor-images{
+        margin: 15px 25px ;
+    }
 
 }
 /* for medium and tablet devices */
@@ -211,7 +224,7 @@ main{
     }
     nav,
     .feature,
-    .card-container
+    .card-container,.sponsor-images
     {
         flex-direction: column;
     }
@@ -231,7 +244,7 @@ main{
     .facts-text{
         text-align: center;
     }
-}   
+}  
 
 
 
